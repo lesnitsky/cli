@@ -36,6 +36,8 @@ class Cli {
 
     if (this.commands.containsKey(name)) {
       await this.commands[name].exec(arguments);
+    } else if (this.commands.containsKey('main')) {
+      await this.commands['main'].exec(args);
     } else {
       throw new Exception('Unknown command "${name}"');
     }
