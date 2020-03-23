@@ -25,6 +25,7 @@ class Cli {
 
     if (args.length == 0) {
       name = 'main';
+      arguments = args;
 
       if (!this.commands.containsKey(name)) {
         exit(0);
