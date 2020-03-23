@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:cli/cli.dart';
-import 'package:cli/command.dart';
+import 'package:l_cli/cli.dart';
+import 'package:l_cli/command.dart';
 
 class RandomIntCommand extends Command {
   Random random;
